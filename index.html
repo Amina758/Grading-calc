@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div style="background-color: darkseagreen;">
+        <b>Grading calculator</b>
+    </div>
+<center>
+       <div style="background-color:darkseagreen  ;">
+    
+    <form onsubmit="cal(); return false;">
+        <label for="sn"><b>Student Name: </b></label>
+        <input type="text" id="sn" placeholder="Enter your name">
+        <br>
+        <label for="stm"><b>Total Marks: </b></label>
+        <input type="text" id="stm" placeholder="Enter total marks">
+        <br>
+        <label for="sobt"><b>Obtained Marks: </b></label>
+        <input type="text" id="sobt" placeholder="Enter obtained marks">
+        <br>
+        <div class="btn">
+            <button type="reset">Reset</button>
+            <button type="button" onclick="cal()">Calculate</button>
+        </div>
+        <h2>Result will show here</h2>
+        <h3 id="percentage"></h3>
+        <h4 id="grade"></h4>
+    </form>
+       </div>
+</center>
+
+<script src="index.js"></script>
+
+</body>
+</html>
